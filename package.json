@@ -1,0 +1,21 @@
+{
+  "name": "tropical-blockchain-summit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "hugo server --watch",
+    "deploy": "scripts/deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockchaincr/tropical-blockchain-summit.git"
+  },
+  "author": "Gabo Esquivel <contact@gaboesquivel.com> (https://gaboesquivel.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blockchaincr/tropical-blockchain-summit/issues"
+  },
+  "homepage": "https://github.com/blockchaincr/tropical-blockchain-summit#readme"
+}
