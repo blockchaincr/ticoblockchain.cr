@@ -1,32 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import clsx from 'clsx'
-import { Link as RouterLink } from 'react-router-dom'
-import { makeStyles, useTheme } from '@material-ui/styles'
-import AppBar from '@material-ui/core/AppBar'
+import { makeStyles } from '@material-ui/styles'
 import Container from '@material-ui/core/Container'
-import Drawer from '@material-ui/core/Drawer'
-import Toolbar from '@material-ui/core/Toolbar'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
 
 import styles from './styles'
 
 const useStyles = makeStyles(styles)
 
-const Main = ({
-  children,
-  sidebarContent,
-  topbarContent,
-  openSidebar,
-  setOpenSidebar
-}) => {
+const Main = ({ children }) => {
   const classes = useStyles()
-  const theme = useTheme()
-  const isDesktop = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true
-  })
 
   return (
     <Container
@@ -36,54 +19,13 @@ const Main = ({
         [classes.root]: true
       })}
     >
-      <AppBar className={classes.appBar}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            onClick={() => setOpenSidebar(!openSidebar)}
-            className={classes.drawerToggle}
-          >
-            <MenuIcon />
-          </IconButton>
-          <RouterLink to="/">
-            <img
-              className={classes.logo}
-              alt="Logo"
-              src="https://eoscostarica.io/wp-content/uploads/2019/07/EOSCRlogo-main-darkOverWhite-1.png"
-            />
-          </RouterLink>
-          {topbarContent}
-        </Toolbar>
-      </AppBar>
-      <Drawer
-        anchor="left"
-        classes={{ paper: classes.drawerPaper }}
-        onClose={() => setOpenSidebar(false)}
-        open={openSidebar}
-        variant="temporary"
-        className={clsx({
-          [classes.drawer]: true,
-          [classes.drawerDesktop]: isDesktop && openSidebar
-        })}
-      >
-        <div className={classes.drawerContent}>{sidebarContent}</div>
-      </Drawer>
       {children}
     </Container>
   )
 }
 
 Main.propTypes = {
-  children: PropTypes.node,
-  sidebarContent: PropTypes.node,
-  topbarContent: PropTypes.node,
-  openSidebar: PropTypes.bool,
-  setOpenSidebar: PropTypes.func
-}
-
-Main.defaultProps = {
-  openSidebar: false,
-  setOpenSidebar: () => {}
+  children: PropTypes.node
 }
 
 export default Main

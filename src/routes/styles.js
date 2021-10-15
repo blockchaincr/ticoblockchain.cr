@@ -70,7 +70,8 @@ export default (theme) => ({
     }
   },
   backLayer: {
-    overflowY: 'auto'
+    overflowY: 'auto',
+    backgroundcolor: '#013aad !important'
   },
   headerBox: {
     [theme.breakpoints.up('lg')]: {
@@ -121,11 +122,6 @@ export default (theme) => ({
   // Layers
   layer: {
     height: '100%',
-    overflowY: 'auto',
-    padding: 16,
-    [theme.breakpoints.up('lg')]: {
-      paddingRight: theme.spacing(32),
-      paddingLeft: theme.spacing(32)
-    }
+    overflowY: 'auto'
   }
 })

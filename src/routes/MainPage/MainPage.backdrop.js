@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
 import Typography from '@material-ui/core/Typography'
 import { useTranslation } from 'react-i18next'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
@@ -9,7 +8,6 @@ import { Backdrop } from '@eoscostarica/eoscr-components'
 import Snackbar from '@material-ui/core/Snackbar'
 import Alert from '@material-ui/lab/Alert'
 
-import BackLayer from '../BackLayer'
 import FrontLayer from '../FrontLayer'
 import styles from '../styles'
 
@@ -17,7 +15,7 @@ const STATIC_PAGES = ['/product']
 
 const useStyles = makeStyles(styles)
 
-const MainPageBackdrop = ({ ual }) => {
+const MainPageBackdrop = () => {
   const { t, i18n } = useTranslation('translations')
   const theme = useTheme()
   const classes = useStyles()
@@ -77,11 +75,6 @@ const MainPageBackdrop = ({ ual }) => {
       }}
       backLayer={
         <>
-          <BackLayer
-            ual={ual}
-            pathname={location.pathname}
-            showMessage={setMessage}
-          />
           <Snackbar
             open={!!message}
             autoHideDuration={30000}
@@ -105,14 +98,6 @@ const MainPageBackdrop = ({ ual }) => {
       isStaticPage={isStaticPage}
     />
   )
-}
-
-MainPageBackdrop.propTypes = {
-  ual: PropTypes.object
-}
-
-MainPageBackdrop.defaultProps = {
-  ual: {}
 }
 
 export default MainPageBackdrop

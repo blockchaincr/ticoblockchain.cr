@@ -9,20 +9,19 @@ import styles from '../styles'
 
 const useStyles = makeStyles(styles)
 
-const MainPage = ({ useBackdrop, ual }) => {
+const MainPage = ({ useBackdrop }) => {
   const classes = useStyles()
 
   return useBackdrop ? (
-    <MainPageBackdrop ual={ual} />
+    <MainPageBackdrop />
   ) : (
     <Box className={classes.rootMainPage}>
-      <FrontLayer ual={ual} />
+      <FrontLayer />
     </Box>
   )
 }
 
 MainPage.propTypes = {
-  ual: PropTypes.object,
   useBackdrop: PropTypes.bool
 }
 

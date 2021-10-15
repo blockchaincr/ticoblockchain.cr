@@ -1,7 +1,8 @@
 export default (theme) => ({
   root: {
     padding: 0,
-    display: 'flex'
+    display: 'flex',
+    backgroundColor: theme.palette.primary.main
   },
   appBar: {
     boxShadow: 'none'

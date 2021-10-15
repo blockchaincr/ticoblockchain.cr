@@ -1,43 +1,94 @@
-import { EOSCR_THEME } from '@eoscostarica/eoscr-theme'
-
 export default {
   h1: {
-    ...EOSCR_THEME.typography.h1
+    fontSize: '4.375em',
+    fontWeight: 'bold',
+    fontStyle: 'normal',
+    lineHeight: 'normal',
+    letterSpacing: 'normal'
   },
   h2: {
-    ...EOSCR_THEME.typography.h2
+    fontSize: '3.125em',
+    letterSpacing: 'normal',
+    fontWeight: 'bold',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   },
   h3: {
-    ...EOSCR_THEME.typography.h3
+    fontSize: '2.5em',
+    letterSpacing: 'normal',
+    fontWeight: 'normal',
+    fontStretch: 'normal',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   },
   h4: {
-    ...EOSCR_THEME.typography.h4
+    fontSize: '1.875em',
+    letterSpacing: 'normal',
+    fontWeight: 'bold',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   },
   h5: {
-    ...EOSCR_THEME.typography.h5
+    fontSize: '1.25em',
+    letterSpacing: 'normal',
+    fontWeight: 'bold',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   },
   h6: {
-    ...EOSCR_THEME.typography.h6
+    fontSize: '1em',
+    letterSpacing: 'normal',
+    fontWeight: 'bold',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   },
   subtitle1: {
-    ...EOSCR_THEME.typography.subtitle1
+    fontSize: '1.25em',
+    letterSpacing: 'normal',
+    fontWeight: 'bold',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   },
   subtitle2: {
-    ...EOSCR_THEME.typography.subtitle2
+    fontSize: '1.125em',
+    letterSpacing: 'normal',
+    fontWeight: 'normal',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   },
   body1: {
-    ...EOSCR_THEME.typography.body1
+    fontSize: '1.25em',
+    letterSpacing: 'normal',
+    fontWeight: 'normal',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   },
   body2: {
-    ...EOSCR_THEME.typography.body2
+    fontSize: '1.25em',
+    letterSpacing: 'normal',
+    fontWeight: 'normal',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   },
   button: {
-    ...EOSCR_THEME.typography.button
+    fontSize: '1.875em',
+    letterSpacing: 'normal',
+    fontWeight: 'bold',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   },
   caption: {
-    ...EOSCR_THEME.typography.caption
+    fontSize: '3.125em',
+    letterSpacing: 'normal',
+    fontWeight: 'bold',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   },
   overline: {
-    ...EOSCR_THEME.typography.overline
+    fontSize: '3.125em',
+    letterSpacing: 'normal',
+    fontWeight: 'bold',
+    fontStyle: 'normal',
+    lineHeight: 'normal'
   }
 }
