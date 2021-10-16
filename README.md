@@ -1,4 +1,4 @@
-# EOSCR Web App Boilerplate
+# Tico Blockchain - Asociacion Blockchain de Costa Rica
 
 [![N|Solid](https://github.com/eoscostarica/eos-rate/raw/master/docs/eoscostarica-logo-black.png)](https://eoscostarica.io/)
 

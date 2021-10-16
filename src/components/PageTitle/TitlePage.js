@@ -13,7 +13,7 @@ TitlePage.propTypes = {
 }
 
 TitlePage.defaultProps = {
-  title: 'EOSCR Web App Boilerplate'
+  title: 'Tico Blockchain - Asociacion Blockchain de Costa Rica'
 }
 
 export default TitlePage
