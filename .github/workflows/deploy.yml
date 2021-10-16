@@ -1,0 +1,42 @@
+name: Deployment
+on:
+  push:
+    tags:
+      - v*
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install Packages
+        run: yarn --frozen-lockfile
+
+      - name: Build page
+        run: yarn run build
+
+      - name: Set 404 page as index.html
+        run: cp ./build/index.html ./build/404.html
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+
+      - name: Create Release
+        id: create_release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: true
+
+    env:
+      REACT_APP_NAME: ticoblockchain.cr
+      REACT_APP_PROJECT_VERSION: ${{ github.ref }}
