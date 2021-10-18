@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next'
 import Box from '@material-ui/core/Box'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
 import { useMediaQuery } from 'react-responsive'
 
 import TitlePage from 'components/PageTitle'
@@ -170,19 +169,9 @@ const GoToAsoBlockchain = () => {
     >
       <Grid item md={12} xs={12}>
         <Typography className={classes.colorText} variant="h3">
-          Conozca más sobre AsoBlockchain
+          Síganos en redes para más información de la <br /> Asociación
+          Blockchain de Costa Rica
         </Typography>
-      </Grid>
-      <Grid style={{ marginTop: 34 }} item md={12} xs={12}>
-        <Button
-          className={classes.secondaryButton}
-          href="https://asoblockchain.org/"
-          color="primary"
-          variant="contained"
-          target="_blank"
-        >
-          Ver más
-        </Button>
       </Grid>
     </Grid>
   )
