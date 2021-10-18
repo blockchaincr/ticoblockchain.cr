@@ -192,7 +192,7 @@ const FullWidthTabs = () => {
           date="Martes 2 noviembre 3:00pm - 5pm"
           description={[
             {
-              title: 'Presentación de Asociación Blockchain Costa Rica:',
+              title: 'Activos Virtuales y Tratamiento Prudencial:',
               description:
                 'Rocio Aguilar (Superintendente General de Entidades Financieras y Superintendente de Pensiones) y Reyner Brenes (Asesor del CONASSIF).'
             },
@@ -226,13 +226,13 @@ const FullWidthTabs = () => {
             {
               title:
                 'Presentación: Perspectiva sobre Instrumentos Financieros en Blockchain:',
-              description: 'Daniel Truque (Fundador Satoshi Capital).'
+              description:
+                'María Lucía Fernández (Superintendente General de Valores).'
             },
             {
               title:
                 'Introducción a Criptobonos e Instrumentos financieros en Blockchain (Acciones y Otros):',
-              description:
-                'Daniel Rojas (educador y consultor de activos digitales).'
+              description: 'Daniel Truque (Fundador Satoshi Capital).'
             },
             {
               title: 'Introducción a Finanzas Descentralizadas:',
