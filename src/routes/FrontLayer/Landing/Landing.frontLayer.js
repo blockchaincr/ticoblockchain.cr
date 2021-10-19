@@ -44,8 +44,9 @@ const Header = () => {
       </Grid>
       <Grid style={{ paddingTop: 69 }} item md={10} xs={12}>
         <Typography className={classes.colorText} variant="h3">
-          Organizados por la Asociación Blockchain Costa Rica, en colaboración
-          con CONASSIF y Banco Central de C.R.
+          La Asociación Blockchain Costa Rica (AsoBlockchain), tiene el placer
+          de invitarle a los Seminarios TicoBlockchain, eventos gratuitos de
+          educación sobre blockchain y activos digitales.
         </Typography>
       </Grid>
     </Grid>
