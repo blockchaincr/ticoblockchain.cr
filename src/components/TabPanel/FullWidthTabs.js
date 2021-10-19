@@ -236,7 +236,8 @@ const FullWidthTabs = () => {
             },
             {
               title: 'Introducción a Finanzas Descentralizadas:',
-              description: 'Carlos Cerrato (Fundador Grupo Xource).'
+              description:
+                'Carlos Cerrato (Blockchain Product Manager en IOHK).'
             },
             {
               title: 'Fondos de Inversión de Capital Privado:',
