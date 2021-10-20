@@ -225,7 +225,7 @@ const FullWidthTabs = () => {
           description={[
             {
               title:
-                'Presentación: Perspectiva sobre Instrumentos Financieros en Blockchain:',
+                'Presentación: Perspectiva sobre las Fintech y la tecnología Blockchain en el mercado de valores:',
               description:
                 'María Lucía Fernández (Superintendente General de Valores).'
             },
