@@ -12,6 +12,7 @@ import FullWidthTabs from '../../../components/TabPanel'
 import styles from './styles'
 
 const ticoBlockchainLogo = '/ticoBlockchain-logo.svg'
+const edeniaLogo = '/eoscr-by-edenia-logo.svg'
 const location = '/icons/location.svg'
 const calendar = '/icons/calendar.svg'
 const ticket = '/icons/ticket.svg'
@@ -184,17 +185,17 @@ const FooterPage = () => {
 
   return (
     <Grid container className={classes.layer} style={{ marginTop: 52 }}>
-      <Grid container md={6} xs={12}>
-        <Grid className={classes.centerText} item md={12} xs={12}>
-          <img style={{ width: 145 }} src={ticoBlockchainLogo} />
-        </Grid>
+      <Grid container className={classes.isDesktop} md={6} xs={12}>
         <Grid
           style={{ marginTop: 40 }}
-          className={classes.centerText}
+          className={classes.centerTex}
           item
           md={5}
           xs={12}
         >
+          <a href="https://es.eoscostarica.io/" target="_blank">
+            <img style={{ width: 190 }} src={edeniaLogo} />
+          </a>
           <Typography className={classes.colorText} variant="body1">
             Sitio desarrollado por Edenia Asoblockchain, 2021
           </Typography>
@@ -203,10 +204,15 @@ const FooterPage = () => {
       <Grid
         container
         justify={isDesktop ? 'flex-end' : 'center'}
-        style={{ paddingTop: '10%' }}
         md={6}
         xs={12}
       >
+        <Grid className={classes.specialCenterText} item md={12} xs={12}>
+          <img
+            className={classes.ticoBlockchainLogo}
+            src={ticoBlockchainLogo}
+          />
+        </Grid>
         <Grid style={{ textAlign: 'center' }} item md={2} sm={2} xs={4}>
           <a href="https://www.facebook.com/Ticoblockchain" target="_blank">
             <img className={classes.socialMediaIcons} src={facebook} />
@@ -224,6 +230,22 @@ const FooterPage = () => {
           >
             <img className={classes.socialMediaIcons} src={youtube} />
           </a>
+        </Grid>
+        <Grid container className={classes.isMobile} md={6} xs={12}>
+          <Grid
+            style={{ marginTop: 40 }}
+            className={classes.centerTex}
+            item
+            md={5}
+            xs={12}
+          >
+            <a href="https://es.eoscostarica.io/" target="_blank">
+              <img style={{ width: 190 }} src={edeniaLogo} />
+            </a>
+            <Typography className={classes.colorText} variant="body1">
+              Sitio desarrollado por Edenia Asoblockchain, 2021
+            </Typography>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>

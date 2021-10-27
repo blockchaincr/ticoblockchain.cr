@@ -106,9 +106,35 @@ export default (theme) => ({
       marginBottom: 10
     }
   },
-  centerText: {
+  centerMobileText: {
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center'
+    }
+  },
+  specialCenterText: {
+    textAlign: 'end',
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center'
+    }
+  },
+  ticoBlockchainLogo: {
+    marginRight: 60,
+    width: 145,
+    [theme.breakpoints.down('sm')]: {
+      marginRight: 0
+    }
+  },
+  centerTex: {
+    textAlign: 'center'
+  },
+  isDesktop: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
+  },
+  isMobile: {
+    [theme.breakpoints.up('sm')]: {
+      display: 'none'
     }
   }
 })
