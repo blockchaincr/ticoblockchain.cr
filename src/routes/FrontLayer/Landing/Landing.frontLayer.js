@@ -186,18 +186,15 @@ const FooterPage = () => {
   return (
     <Grid container className={classes.layer} style={{ marginTop: 52 }}>
       <Grid container className={classes.isDesktop} md={6} xs={12}>
-        <Grid
-          style={{ marginTop: 40 }}
-          className={classes.centerTex}
-          item
-          md={5}
-          xs={12}
-        >
-          <a href="https://es.eoscostarica.io/" target="_blank">
-            <img style={{ width: 190 }} src={edeniaLogo} />
+        <Grid style={{ marginTop: 40 }} item md={5} xs={12}>
+          <Typography className={classes.colorText} variant="body1">
+            Sitio desarrollado por:
+          </Typography>
+          <a href="https://edenia.com/" target="_blank">
+            <img style={{ width: 190, marginLeft: -20 }} src={edeniaLogo} />
           </a>
           <Typography className={classes.colorText} variant="body1">
-            Sitio desarrollado por Edenia Asoblockchain, 2021
+            Asoblockchain, 2021
           </Typography>
         </Grid>
       </Grid>
@@ -239,11 +236,14 @@ const FooterPage = () => {
             md={5}
             xs={12}
           >
+            <Typography className={classes.colorText} variant="body1">
+              Sitio desarrollado por
+            </Typography>
             <a href="https://es.eoscostarica.io/" target="_blank">
               <img style={{ width: 190 }} src={edeniaLogo} />
             </a>
             <Typography className={classes.colorText} variant="body1">
-              Sitio desarrollado por Edenia Asoblockchain, 2021
+              Asoblockchain, 2021
             </Typography>
           </Grid>
         </Grid>
