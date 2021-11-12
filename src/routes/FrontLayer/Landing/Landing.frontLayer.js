@@ -194,7 +194,7 @@ const FooterPage = () => {
             <img style={{ width: 190, marginLeft: -20 }} src={edeniaLogo} />
           </a>
           <Typography className={classes.colorText} variant="body1">
-            Asoblockchain, 2021
+            miembro fundador de Asoblockchain, 2021
           </Typography>
         </Grid>
       </Grid>
@@ -243,7 +243,7 @@ const FooterPage = () => {
               <img style={{ width: 190 }} src={edeniaLogo} />
             </a>
             <Typography className={classes.colorText} variant="body1">
-              Asoblockchain, 2021
+              miembro fundador de Asoblockchain, 2021
             </Typography>
           </Grid>
         </Grid>
